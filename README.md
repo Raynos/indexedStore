@@ -4,14 +4,14 @@ Small indexedDB wrapper that fixes the API
 
 ## <a href="#example" name="example">Example</a>
 
-// jsfiddle: http://jsfiddle.net/Pj7G4/1/
-var store = indexeddbStore("user")
+    // jsfiddle: http://jsfiddle.net/Pj7G4/1/
+    var store = indexeddbStore("user")
 
-store.put({ name: "bob" }, "bob", function (err, result) {
-    store.get("bob", function (err, user) {
-        console.log(user.name === "bob")
+    store.put({ name: "bob" }, "bob", function (err, result) {
+        store.get("bob", function (err, user) {
+            console.log(user.name === "bob")
+        })
     })
-})
 
 ## Documentation
 
